@@ -10,7 +10,7 @@ const fs = require('fs')
 const os = require('os')
 const speed = require('performance-now')
 
-if (BOT_TOKEN == 'YOUR_TELEGRAM_BOT_TOKEN') {
+if (BOT_TOKEN == 'BeYu9vfKtxyU2kJ') {
     return console.log(lang.noToken)
 }
 
@@ -39,8 +39,8 @@ async function startalpha() {
             fetchJson
         } = simple
         const pushname = user.full_name;
-        const username = user.username ? user.username : "zeeone_ofc";
-        const isCreator = [alpha.botInfo.username, ...global.OWNER].map(v => v.replace("https://t.me/", '')).includes(user.username ? user.username : "-")
+        const username = user.username ? user.username : "Fizzxqt";
+        const isCreator = [alpha.botInfo.username, ...global.OWNER].map(v => v.replace("https://t.me/Fizzxqt", '')).includes(user.username ? user.username : "-")
         const reply = async (text) => {
             for (var x of simple.range(0, text.length, 4096)) { //maks 4096 character, jika lebih akan eror
                 return await alpha.replyWithMarkdown(text.substr(x, 4096), {
@@ -308,7 +308,7 @@ async function startalpha() {
             "Username": "@" + getme.username,
             "ID": getme.id,
             "Link": `https://t.me/${getme.username}`,
-            "Author": "https://t.me/zeeoneofc"
+            "Author": "https://t.me/Fizzxqt"
         })
     })
 }
